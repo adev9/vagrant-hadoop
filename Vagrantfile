@@ -60,7 +60,7 @@ Vagrant.configure("2") do |config|
 		config.vm.define "hdp#{i}" do |node|
 	
 		# 设置虚拟机的Box
-		node.vm.box = "centos/7"
+		node.vm.box = "generic/centos7"
 		# 设置虚拟机的主机名
 		node.vm.hostname="hdp-node-0#{i}"
 		# 设置虚拟机的IP
